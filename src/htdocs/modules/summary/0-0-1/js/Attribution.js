@@ -3,7 +3,7 @@ define([
 ], function (
 ) {
 	'use strict';
-	
+
 	// TODO :: Configurable
 	var LOGO_ROOT = '/images/logos/';
 
@@ -19,7 +19,7 @@ define([
 
 		US: 'US,NEIC',
 		NEIC: 'US,NEIC'
-	}; 
+	};
 
 	var SOURCE_MAP = {
 		'AK,AEIC': {id: 'AK,AEIC', 'title': 'Alaska Earthquake Information Center', 'url': 'http://www.aeic.alaska.edu/', 'logo': LOGO_ROOT + 'AK.jpg'},
