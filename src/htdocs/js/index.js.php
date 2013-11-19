@@ -12,7 +12,8 @@ require.config({
 		mvc: '/hazdev-webutils/src/mvc',
 		util: '/hazdev-webutils/src/util',
 
-		base: 'base/0-0-1/js'
+		base: 'base/0-0-1/js',
+		summary: 'summary/0-0-1/js'
 	},
 	shim: {
 	}
@@ -28,11 +29,27 @@ require([
 	'use strict';
 
 	new EventPage({
-		defaultPage: 'shakemap_intensity',
+		defaultPage: 'event_summary',
 		container: document.querySelector('.event-content'),
 		navigation: document.querySelector('.site-sectionnav'),
 		eventDetails: <?php print json_encode($EVENT); ?>,
 		modules: [
+			{
+				className: 'summary/SummaryModule',
+				options: {
+					stub: 'event',
+					title: 'Event Page',
+					pages: [
+						{
+							className: 'summary/SummaryPage',
+							options: {
+								stub: 'summary',
+								title: 'Summary'
+							}
+						}
+					]
+				}
+			},
 			{
 				className: 'base/EventModule',
 				options: {
