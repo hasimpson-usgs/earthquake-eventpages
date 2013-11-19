@@ -75,7 +75,7 @@ define([
 		if (pageFound) {
 			require([pageInfo.className], function (Page) {
 				page = new Page(Util.extend(
-						{}, pageInfo.options, {eventDetails: _this._event}));
+						{}, pageInfo.options, {eventDetails: _this._event, module: _this}));
 				_this.primeCache(page);
 				callback(page);
 			});
