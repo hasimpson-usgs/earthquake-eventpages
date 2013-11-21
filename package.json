@@ -36,7 +36,8 @@
     "mocha": "~1.9.0",
     "sinon": "~1.7.3",
     "hazdev-template": "git+https://github.com/usgs/hazdev-template.git",
-    "grunt-connect-rewrite": "~0.1.1"
+    "grunt-connect-rewrite": "~0.1.1",
+    "grunt-connect-proxy": "~0.1.6"
   },
   "engines": {
     "node": ">=0.8.0"
