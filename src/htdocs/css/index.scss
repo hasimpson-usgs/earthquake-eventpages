@@ -4,6 +4,8 @@
 @import 'event-header.css';
 
 @import 'downloads.css';
+@import 'tabular.css';
+@import '../modules/scientific/0-0-1/css/scientific.css';
 
 * {
 	@include box-sizing(border-box);

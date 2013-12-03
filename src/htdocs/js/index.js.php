@@ -13,7 +13,8 @@ require.config({
 		util: '/hazdev-webutils/src/util',
 
 		base: 'base/0-0-1/js',
-		summary: 'summary/0-0-1/js'
+		summary: 'summary/0-0-1/js',
+		scientific: 'scientific/0-0-1/js'
 	},
 	shim: {
 	}
@@ -47,6 +48,29 @@ require([
 								title: 'Summary'
 							}
 						}
+					]
+				}
+			},
+			{
+				className: 'scientific/ScientificSummaryModule',
+				options: {
+					stub: 'scientific',
+					title: 'Scientific',
+					pages: [
+						{
+							className: 'scientific/ScientificSummaryPage',
+							options: {
+								stub: 'scientific',
+								title: 'Summary'
+							}
+						},
+						{
+							className: 'base/EventModulePage',
+							options: {
+								stub: 'scientific',
+								title: 'Contributed Solutions'
+							}
+						},
 					]
 				}
 			},
